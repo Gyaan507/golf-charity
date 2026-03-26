@@ -1,5 +1,5 @@
 
-const API_BASE_URL = 'https://golf-charity-9i4k.onrender.com';
+const API_BASE_URL = 'https://golf-charity-9i4k.onrender.com/auth';
 
 export const fetchAPI = async (endpoint, options = {}) => {
     // Automatically attach the token if we have one in localStorage
