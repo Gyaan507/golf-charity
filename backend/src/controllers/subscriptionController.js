@@ -21,8 +21,8 @@ const createCheckoutSession = async (req, res) => {
                 },
             ],
             // 3. Where should Stripe send the user after they pay?
-           success_url: 'https://your-frontend.vercel.app/success',
-            cancel_url: 'https://your-frontend.vercel.app/cancel',
+           success_url: 'https://golf-charity-phi.vercel.app/success',
+            cancel_url: 'https://golf-charity-phi.vercel.app/cancel',
         });
 
         // 4. Send the generated Stripe URL back to the frontend
