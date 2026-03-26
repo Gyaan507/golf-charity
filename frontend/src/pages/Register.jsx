@@ -15,7 +15,7 @@ export default function Register() {
         setError('');
         setLoading(true);
         try {
-            await fetchAPI('api/auth/register', {
+            await fetchAPI('/auth/register', {
                 method: 'POST',
                 body: JSON.stringify(formData)
             });
