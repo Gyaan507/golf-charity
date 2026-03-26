@@ -1,7 +1,6 @@
 
-const API_BASE_URL = 'http://localhost:5001/api';
+const API_BASE_URL = 'https://golf-charity-9i4k.onrender.com';
 
-// A helper function to make fetch requests cleaner
 export const fetchAPI = async (endpoint, options = {}) => {
     // Automatically attach the token if we have one in localStorage
     const token = localStorage.getItem('token');
