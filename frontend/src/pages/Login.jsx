@@ -15,7 +15,7 @@ export default function Login() {
         setError('');
         setLoading(true);
         try {
-            const data = await fetchAPI('/api/auth/login', { method: 'POST', body: JSON.stringify(formData) });
+            const data = await fetchAPI('/auth/login', { method: 'POST', body: JSON.stringify(formData) });
             const token = data.token || data.session?.access_token || data.access_token;
             if (token) {
                 localStorage.setItem('token', token);
